@@ -1,0 +1,61 @@
+<acceptance-test-run title="*Trying to post empty form*" name="*Trying to post empty form*" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9420" timestamp="2014-10-03T15:30:17.818+02:00">
+  <user-story id="BDD-2" name="Bdd-2" path="BDD-2"/>
+  <issues>
+    <issue>BDD-2</issue>
+  </issues>
+  <tags>
+    <tag name="Create Person" type="Story"/>
+    <tag name="Bdd-2" type="story"/>
+  </tags>
+  <test-group name="Given the user is on the form page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="3461">
+      <screenshots>
+        <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+      </screenshots>
+      <description>On the form page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When the user enters the name &apos;&apos; and age &apos;&apos; and submits the form" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1188">
+      <screenshots>
+        <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+      </screenshots>
+      <description>Enters name: &lt;span class=&apos;step-parameter&apos;&gt;&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="937">
+      <screenshots>
+        <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+      </screenshots>
+      <description>Enters age: &lt;span class=&apos;step-parameter&apos;&gt;&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1173">
+      <screenshots>
+        <screenshot image="7f4ece525012455d2dd505c74c8df236_NONE.png"/>
+      </screenshots>
+      <description>Posts form</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then they should see the error message &apos;size must be between 2 and 30&apos; for name and &apos;may not be null&apos; for age" result="SUCCESS">
+    <screenshots>
+      <screenshot image="7f4ece525012455d2dd505c74c8df236_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="849">
+      <screenshots>
+        <screenshot image="7f4ece525012455d2dd505c74c8df236_NONE.png"/>
+      </screenshots>
+      <description>Should see name error: &lt;span class=&apos;step-parameter&apos;&gt;size must be between 2 and 30&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="891">
+      <screenshots>
+        <screenshot image="7f4ece525012455d2dd505c74c8df236_NONE.png"/>
+      </screenshots>
+      <description>Should see age error: &lt;span class=&apos;step-parameter&apos;&gt;may not be null&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

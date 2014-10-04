@@ -1,0 +1,29 @@
+Create Person
+
+Meta: 
+@issue BDD-2
+
+Scenario: *Trying to post empty form*
+Given the user is on the form page
+When the user enters the name '' and age '' and submits the form
+Then they should see the error message 'size must be between 2 and 30' for name and 'may not be null' for age
+
+Scenario: *Trying to post too short name*
+Given the user is on the form page
+When the user enters the name '<name>' and age '<age>' and submits the form
+Then they should see the error message 'size must be between 2 and 30' for name and 'must be greater than or equal to 18' for age
+Examples:
+| name | age |
+| A | 0 |
+| Z | 17 |
+| Abcd Efgh Ijkl Mnop Qrst Óüöúő Űáéí | -8 |
+
+Scenario: *Filling the form with valid values*
+Given the user is on the form page
+When the user enters the name '<name>' and age '<age>' and submits the form
+Then they should see the success message 'Successfully created a new person'
+Examples:
+| name | age |
+| AB | 18 |
+| ABCDEFGHIJKLMNOPQRSTUVWXYZABCD | 999999999 |
+| ÓÜÖÚŐŰÁÉÍ óüöúőűáéí | 100 |

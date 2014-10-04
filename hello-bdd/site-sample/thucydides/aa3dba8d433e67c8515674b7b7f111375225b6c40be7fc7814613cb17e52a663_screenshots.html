@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Home</title>
+    <link rel="shortcut icon" href="favicon.ico" >
+    <link href="css/core.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+	#slider {
+	    position:relative;
+	    width:1000px; /* Change this to your images width */
+	    height:800px; /* Change this to your images height */
+	    background:url(images/loading.gif) no-repeat 50% 50%;
+	}
+	#slider img {
+	    position:absolute;
+	    top:0px;
+	    left:0px;
+	    display:none;
+	}
+	#slider a {
+	    border:0;
+	    display:block;
+	}
+
+    </style>
+
+	<!-- CSS Files -->
+    <link href="slides/js/global.css" rel="stylesheet" type="text/css"/>
+
+    <script src="scripts/jquery.js"></script>
+
+	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+
+	<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    var screenshotIndex = getUrlVars()["screenshot"];
+
+	$(window).load(function() {
+	    $('#slider').nivoSlider({
+            startSlide:screenshotIndex,
+            effect:'fade',
+			animSpeed:200,
+			directionNavHide:false,
+			manualAdvance:true,
+			keyboardNav:true
+		});
+	});
+	</script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/logo.jpg" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="bluetext"><a href="index.html" class="bluetext">Home</a> > <a href="aa3dba8d433e67c8515674b7b7f111375225b6c40be7fc7814613cb17e52a663.html">*Trying to post empty form* </a> > Screenshots </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div class="menu">
+    <ul>
+        <li><a href="index.html" class="current">Overall Test Results</a></li>
+        <li><a href="capabilities.html" >Requirements</a></li>
+    </ul>
+    <span class="date-and-time">Report generated 03-10-2014 15:31</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+    <div id="contentbody">
+        <div class="titlebar">
+        <div class="story-title">
+            <table width="1005">
+                <td width="50"><img class="story-outcome-icon" src="images/success.png" width="25" height="25"/> </td>
+                <td width="%"><span class="test-case-title"><span
+                        class="success-color">*Trying to post empty form*<span class="related-issue-title">(<a target="_blank" href="http://jira.adwareresearch.net/browse/BDD-2">BDD-2</a>)</span></span></span>
+                </td>
+                <td width="100"><span class="test-case-duration"><span class="greentext">9.42s</span></span>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a class="tagLink" href="9c97d4b871744d0986a60b504b6ce29c4db51a8e4084adac11971fae36e9656b.html">Bdd-2 (story)</a>
+                        <a class="tagLink" href="23667809387f9afd39d4bcb11990d3de10c7e3d70da3f33733cea0f9bab32c0f.html">Create Person (Story)</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+
+	 <div class="slider-wrapper theme-default">
+		<div id="slider">
+                <img src="4d5691124da85aa7493e4e788d4180c5_NONE.png" alt="" title="On the form page" width="1426"/>
+                <img src="4d5691124da85aa7493e4e788d4180c5_NONE.png" alt="" title="Enters name: &lt;span class='step-parameter'&gt;&lt;/span&gt;" width="1426"/>
+                <img src="4d5691124da85aa7493e4e788d4180c5_NONE.png" alt="" title="Enters age: &lt;span class='step-parameter'&gt;&lt;/span&gt;" width="1426"/>
+                <img src="7f4ece525012455d2dd505c74c8df236_NONE.png" alt="" title="Posts form" width="1426"/>
+                <img src="7f4ece525012455d2dd505c74c8df236_NONE.png" alt="" title="Should see name error: &lt;span class='step-parameter'&gt;size must be between 2 and 30&lt;/span&gt;" width="1426"/>
+                <img src="7f4ece525012455d2dd505c74c8df236_NONE.png" alt="" title="Should see age error: &lt;span class='step-parameter'&gt;may not be null&lt;/span&gt;" width="1426"/>
+        </div>
+	  </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Thucydides version 0.9.271 - Build UNKNOWN</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Bdd-2","*Filling the form with valid values*","SUCCESS","2014-10-03T13:30:49.688Z","0.0","24.02"
+"Bdd-2","*Trying to post too short name*","SUCCESS","2014-10-03T13:30:28.694Z","0.0","20.99"

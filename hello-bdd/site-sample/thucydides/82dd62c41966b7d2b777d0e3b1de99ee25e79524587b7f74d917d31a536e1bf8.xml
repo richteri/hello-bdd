@@ -1,0 +1,29 @@
+<acceptance-test-run title="*The user is not logged in*" name="*The user is not logged in*" steps="2" successful="1" failures="0" skipped="0" ignored="0" pending="1" annotated-result="PENDING" result="PENDING" duration="2938" timestamp="2014-10-03T15:31:13.915+02:00">
+  <user-story id="BDD-4" name="Bdd-4" path="BDD-4"/>
+  <issues>
+    <issue>BDD-4</issue>
+  </issues>
+  <tags>
+    <tag name="BDD-3/Create an informative dashboard for the user" type="Epic"/>
+    <tag name="BDD-4/Greeting page" type="Story"/>
+    <tag name="Greeting page" type="Story"/>
+    <tag name="Bdd-4" type="story"/>
+  </tags>
+  <test-group name="Given the user is on the home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="aa81c7878d7631dfc5c0ac6496a5ce5a_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2687">
+      <screenshots>
+        <screenshot image="aa81c7878d7631dfc5c0ac6496a5ce5a_NONE.png"/>
+      </screenshots>
+      <description>On the home page</description>
+    </test-step>
+  </test-group>
+  <test-step result="PENDING" duration="125">
+    <screenshots>
+      <screenshot image="aa81c7878d7631dfc5c0ac6496a5ce5a_NONE.png"/>
+    </screenshots>
+    <description>Then they should see the greeting Hello, &apos;World&apos;!</description>
+  </test-step>
+</acceptance-test-run>

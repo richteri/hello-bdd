@@ -1,0 +1,92 @@
+<acceptance-test-run title="*The user has already logged in*" name="*The user has already logged in*" steps="6" successful="1" failures="0" skipped="0" ignored="2" pending="3" annotated-result="PENDING" result="PENDING" duration="2332" timestamp="2014-10-03T15:31:17.070+02:00">
+  <user-story id="BDD-4" name="Bdd-4" path="BDD-4"/>
+  <issues>
+    <issue>BDD-4</issue>
+  </issues>
+  <tags>
+    <tag name="BDD-3/Create an informative dashboard for the user" type="Epic"/>
+    <tag name="BDD-4/Greeting page" type="Story"/>
+    <tag name="Greeting page" type="Story"/>
+    <tag name="Bdd-4" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>name</header>
+    </headers>
+    <rows>
+      <row result="PENDING">
+        <value>Dávid</value>
+      </row>
+      <row result="PENDING">
+        <value>Laci</value>
+      </row>
+      <row result="PENDING">
+        <value>István</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {name=Dávid}" result="PENDING">
+    <screenshots>
+      <screenshot image="aa81c7878d7631dfc5c0ac6496a5ce5a_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user called &apos;{Dávid}&apos; is on the home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="aa81c7878d7631dfc5c0ac6496a5ce5a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="797">
+        <screenshots>
+          <screenshot image="aa81c7878d7631dfc5c0ac6496a5ce5a_NONE.png"/>
+          <screenshot image="7a8bb8471f933047ec2318e20a7e8036_NONE.png"/>
+        </screenshots>
+        <description>On the home page with name: &lt;span class=&apos;step-parameter&apos;&gt;Dávid&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-step result="PENDING" duration="110">
+      <screenshots>
+        <screenshot image="7a8bb8471f933047ec2318e20a7e8036_NONE.png"/>
+      </screenshots>
+      <description>Then they should see the greeting Hello, &apos;&lt;name&gt;&apos;!</description>
+    </test-step>
+  </test-group>
+  <test-group name="[2] {name=Laci}" result="PENDING">
+    <screenshots>
+      <screenshot image="7a8bb8471f933047ec2318e20a7e8036_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user called &apos;{Laci}&apos; is on the home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="7a8bb8471f933047ec2318e20a7e8036_NONE.png"/>
+      </screenshots>
+      <test-step result="IGNORED" duration="78">
+        <description>On the home page with name: &lt;span class=&apos;step-parameter&apos;&gt;Laci&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-step result="PENDING" duration="110">
+      <screenshots>
+        <screenshot image="7a8bb8471f933047ec2318e20a7e8036_NONE.png"/>
+      </screenshots>
+      <description>Then they should see the greeting Hello, &apos;&lt;name&gt;&apos;!</description>
+    </test-step>
+  </test-group>
+  <test-group name="[3] {name=István}" result="PENDING">
+    <screenshots>
+      <screenshot image="7a8bb8471f933047ec2318e20a7e8036_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user called &apos;{István}&apos; is on the home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="7a8bb8471f933047ec2318e20a7e8036_NONE.png"/>
+      </screenshots>
+      <test-step result="IGNORED" duration="62">
+        <description>On the home page with name: &lt;span class=&apos;step-parameter&apos;&gt;István&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-step result="PENDING" duration="109">
+      <screenshots>
+        <screenshot image="7a8bb8471f933047ec2318e20a7e8036_NONE.png"/>
+      </screenshots>
+      <description>Then they should see the greeting Hello, &apos;&lt;name&gt;&apos;!</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

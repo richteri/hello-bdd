@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>*Filling the form with valid values*</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/core.css"/>
+    <link rel="stylesheet" type="text/css" href="jqplot/jquery.jqplot.min.css"/>
+
+    <script src="scripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+
+    <link type="text/css" href="jqueryui/css/start/jquery-ui-1.8.18.custom.css" rel="Stylesheet"/>
+    <script type="text/javascript" src="jqueryui/js/jquery-ui-1.8.18.custom.min.js"></script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/logo.jpg" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+<div id="contenttop">
+    <div class="middlebg">
+        <span class="bluetext"><a href="index.html"
+                                  class="bluetext">Home</a> > *Filling the form with valid values* </span>
+    </div>
+    <div class="rightbg"></div>
+</div>
+
+<div class="clr"></div>
+
+<!--/* starts second table*/-->
+<div class="menu">
+    <ul>
+        <li><a href="index.html" class="current">Overall Test Results</a></li>
+        <li><a href="capabilities.html" >Requirements</a></li>
+    </ul>
+    <span class="date-and-time">Report generated 03-10-2014 15:31</span>
+    <br style="clear:left"/>
+</div>
+<div class="clr"></div>
+
+<div id="contentbody">
+    <div class="titlebar">
+        <div class="story-title">
+            <table width="1005">
+                <td width="50"><img class="story-outcome-icon" src="images/success.png" width="25" height="25"/>
+                </td>
+                <td width="%"><span class="test-case-title"><span
+                        class="success-color">*Filling the form with valid values*<span
+                        class="related-issue-title">(<a target="_blank" href="http://jira.adwareresearch.net/browse/BDD-2">BDD-2</a>)</span></span></span>
+                </td>
+                <td width="100"><span class="test-case-duration"><span
+                        class="greentext">24.02s</span></span>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div>
+                            <h3>Story: Bdd-2</h3>
+
+                            <div class="requirementNarrativeTitle">
+                            
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a class="tagLink" href="76d036e9aa64c54f7a17f021e8cc07ed841dbee999f0c1e6b0ce850cf06f26e6.html">Bdd-2 (story)</a>
+                        <a class="tagLink" href="f83e158db6f633e9ded22b43443e026067a392cd0966befde7463a2d3b0e355f.html">Crud Operations For Person Entities (Epic)</a>
+                        <a class="tagLink" href="d48533107d6c59dace97b912212168711723a6d6505c26574797987b9eba7555.html">Create Person (Story)</a>
+                        <a class="tagLink" href="ceaf2c52e45bba8c4555cc7f6c0fd8c1ee326cf48070602ef89c53df682f9c46.html">Create Person (Story)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="clr"></div>
+
+<div class="story-title">
+    <h3>Scenario:</h3>
+
+    <div class="scenario">Given the user is on the form page<br>When the user enters the name '{AB}' and age '{18}' and submits the form<br>Then they should see the success message 'Successfully created a new person'</div>
+
+</div>
+
+<div id="beforetable"></div>
+
+
+
+    <h3>Examples:</h3>
+    <div class="example-table">
+        <table>
+            <thead>
+            <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr class="test-SUCCESS">
+                        <td><a href="#0">AB</a></td>
+                        <td><a href="#0">18</a></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                        <td><a href="#1">ABCDEFGHIJKLMNOPQRSTUVWXYZABCD</a></td>
+                        <td><a href="#1">999999999</a></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                        <td><a href="#2">&Oacute;&Uuml;&Ouml;&Uacute;ŐŰ&Aacute;&Eacute;&Iacute; &oacute;&uuml;&ouml;&uacute;őű&aacute;&eacute;&iacute;</a></td>
+                        <td><a href="#2">100</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">&nbsp;
+                    </th>
+                    <th width="755" class="greentext">Steps</th>
+                        <th width="120" class="greentext">Screenshot</th>
+                    <th width="100" class="greentext">Outcome</th>
+                    <th width="75" class="greentext">Duration</th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            <a name="0"/>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                                   style="display:block">
+                                    <img src="images/plus.png" width="24" class="imgstepSection0"
+                                         style="margin-left: 20px; float:left;  padding-right:5px"/>
+                                </a>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                                   style="display:block">
+                                <span class="top-level-step">[1] {name=AB, age=18}</span>
+                                </a>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">6.27s</span></td>
+                    </tr>
+                        <tr>
+                        <td colspan="5">
+                        <table id="stepSection0" style="display:none; width:100%">
+
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 40px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-step">Given the user is on the form page</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">1.21s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">On the form page</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=0">
+                                        <img src="222c0648f62c4269606823d20b09f636_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.93s</span></td>
+                    </tr>
+
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 40px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-step">When the user enters the name '{AB}' and age '{18}' and submits the form</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">3.6s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Enters name: <span class='step-parameter'>AB</span></span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=2">
+                                        <img src="4d5691124da85aa7493e4e788d4180c5_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">1.31s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Enters age: <span class='step-parameter'>18</span></span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=4">
+                                        <img src="47c8ef1e2568614350f5af2e0d213d0c_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">1.05s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Posts form</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=6">
+                                        <img src="7c3d3ec1904f1ea925bdfc4a19d5da83_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.92s</span></td>
+                    </tr>
+
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 40px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-step">Then they should see the success message 'Successfully created a new person'</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">1.3s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Should see success message: <span class='step-parameter'>Successfully created a new person</span></span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=8">
+                                        <img src="748f965201deb7c863de3cad526076d5_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.97s</span></td>
+                    </tr>
+
+
+                        </table>
+                        </td>
+                        <tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            <a name="1"/>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block">
+                                    <img src="images/plus.png" width="24" class="imgstepSection1"
+                                         style="margin-left: 20px; float:left;  padding-right:5px"/>
+                                </a>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block">
+                                <span class="top-level-step">[2] {name=ABCDEFGHIJKLMNOPQRSTUVWXYZABCD, age=999999999}</span>
+                                </a>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">10.55s</span></td>
+                    </tr>
+                        <tr>
+                        <td colspan="5">
+                        <table id="stepSection1" style="display:none; width:100%">
+
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 40px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-step">Given the user is on the form page</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">1.16s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">On the form page</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=9">
+                                        <img src="748f965201deb7c863de3cad526076d5_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.87s</span></td>
+                    </tr>
+
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 40px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-step">When the user enters the name '{ABCDEFGHIJKLMNOPQRSTUVWXYZABCD}' and age '{999999999}' and submits the form</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">7.96s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Enters name: <span class='step-parameter'>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD</span></span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=11">
+                                        <img src="6178532b192de09d1b87526a7f21a0a0_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">5.63s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Enters age: <span class='step-parameter'>999999999</span></span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=13">
+                                        <img src="7055024dead29d8fea39113865980eb7_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">1.11s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Posts form</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=15">
+                                        <img src="8390faff786ca8436fdf60ca63479430_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.91s</span></td>
+                    </tr>
+
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 40px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-step">Then they should see the success message 'Successfully created a new person'</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">1.27s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Should see success message: <span class='step-parameter'>Successfully created a new person</span></span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=17">
+                                        <img src="748f965201deb7c863de3cad526076d5_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.91s</span></td>
+                    </tr>
+
+
+                        </table>
+                        </td>
+                        <tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            <a name="2"/>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                                   style="display:block">
+                                    <img src="images/plus.png" width="24" class="imgstepSection2"
+                                         style="margin-left: 20px; float:left;  padding-right:5px"/>
+                                </a>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                                   style="display:block">
+                                <span class="top-level-step">[3] {name=ÓÜÖÚŐŰÁÉÍ óüöúőűáéí, age=100}</span>
+                                </a>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">7.2s</span></td>
+                    </tr>
+                        <tr>
+                        <td colspan="5">
+                        <table id="stepSection2" style="display:none; width:100%">
+
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 40px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-step">Given the user is on the form page</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">1.18s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">On the form page</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=18">
+                                        <img src="4d5691124da85aa7493e4e788d4180c5_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.9s</span></td>
+                    </tr>
+
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 40px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-step">When the user enters the name '{ÓÜÖÚŐŰÁÉÍ óüöúőűáéí}' and age '{100}' and submits the form</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">4.63s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Enters name: <span class='step-parameter'>ÓÜÖÚŐŰÁÉÍ óüöúőűáéí</span></span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=19">
+                                        <img src="4d5691124da85aa7493e4e788d4180c5_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">2.36s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Enters age: <span class='step-parameter'>100</span></span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=21">
+                                        <img src="001640ddec2c2145c35f44a34e0d1487_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">1.02s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Posts form</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=23">
+                                        <img src="c3274fe10817e419831c0173f311eb22_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.93s</span></td>
+                    </tr>
+
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 40px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-step">Then they should see the success message 'Successfully created a new person'</span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                            </td>
+                        <td width="100"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">1.2s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+                        <td width="60" class="step-icon">
+                            
+                                <img style="margin-left: 60px; margin-right: 5px;"
+                                     src="images/success.png" class="nested-group-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="nested-group-step">Should see success message: <span class='step-parameter'>Successfully created a new person</span></span>
+                            </div>
+                        </td>
+                            <td width="100" class="SUCCESS-text">
+                                    <a href="425824b6742799bb8ac312d60961a9df888987106e16304a4059a7baaf6ef350_screenshots.html#screenshots?screenshot=25">
+                                        <img src="748f965201deb7c863de3cad526076d5_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.88s</span></td>
+                    </tr>
+
+
+                        </table>
+                        </td>
+                        <tr>
+            </table>
+        </div>
+    </div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Thucydides version 0.9.271 - Build UNKNOWN</span>
+</div>
+
+
+<script type="text/javascript">
+    function toggleDiv(divId) {
+        $("#" + divId).toggle();
+        var imgsrc = $(".img" + divId).attr('src');
+        if (imgsrc == 'images/plus.png') {
+            $(".img" + divId).attr("src", function () {
+                return "images/minus.png";
+            });
+
+        }
+        else {
+            $(".img" + divId).attr("src", function () {
+                return "images/plus.png";
+            });
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    $('.example-table table').dataTable({
+        "aaSorting": [
+            [ 1, "asc" ]
+        ],
+        "bJQueryUI": true,
+        "iDisplayLength": 25,
+        "sScrollX": "100%",
+        "sScrollXInner": "100%",
+        "bScrollCollapse": true
+    });
+</script>
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    function ($) {
+        $('a').imgPreview({
+            imgCSS: {
+                width: '500px'
+            },
+            distanceFromCursor: {top: 10, left: -200}
+        });
+    }
+    //]]>
+</script>
+<div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+        src="" style="display: none; "></div>
+<div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+    <img style="width: 200px; display: none; " src=""></div>
+<div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+    <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+<div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+<div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</body>
+</html>

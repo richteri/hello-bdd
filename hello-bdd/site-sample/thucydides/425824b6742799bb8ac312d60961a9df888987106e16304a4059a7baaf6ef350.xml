@@ -1,0 +1,197 @@
+<acceptance-test-run title="*Filling the form with valid values*" name="*Filling the form with valid values*" steps="15" successful="15" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="24024" timestamp="2014-10-03T15:30:49.688+02:00">
+  <user-story id="BDD-2" name="Bdd-2" path="BDD-2"/>
+  <issues>
+    <issue>BDD-2</issue>
+  </issues>
+  <tags>
+    <tag name="BDD-1/CRUD Operations for Person entities" type="Epic"/>
+    <tag name="BDD-2/Create Person" type="Story"/>
+    <tag name="Create Person" type="Story"/>
+    <tag name="Bdd-2" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>name</header>
+      <header>age</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>AB</value>
+        <value>18</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD</value>
+        <value>999999999</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ÓÜÖÚŐŰÁÉÍ óüöúőűáéí</value>
+        <value>100</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {name=AB, age=18}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="222c0648f62c4269606823d20b09f636_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the form page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="222c0648f62c4269606823d20b09f636_NONE.png"/>
+        <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="927">
+        <screenshots>
+          <screenshot image="222c0648f62c4269606823d20b09f636_NONE.png"/>
+          <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+        </screenshots>
+        <description>On the form page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user enters the name &apos;{AB}&apos; and age &apos;{18}&apos; and submits the form" result="SUCCESS">
+      <screenshots>
+        <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1314">
+        <screenshots>
+          <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+          <screenshot image="47c8ef1e2568614350f5af2e0d213d0c_NONE.png"/>
+        </screenshots>
+        <description>Enters name: &lt;span class=&apos;step-parameter&apos;&gt;AB&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="1047">
+        <screenshots>
+          <screenshot image="47c8ef1e2568614350f5af2e0d213d0c_NONE.png"/>
+          <screenshot image="7c3d3ec1904f1ea925bdfc4a19d5da83_NONE.png"/>
+        </screenshots>
+        <description>Enters age: &lt;span class=&apos;step-parameter&apos;&gt;18&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="922">
+        <screenshots>
+          <screenshot image="7c3d3ec1904f1ea925bdfc4a19d5da83_NONE.png"/>
+          <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+        </screenshots>
+        <description>Posts form</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then they should see the success message &apos;Successfully created a new person&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="969">
+        <screenshots>
+          <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+        </screenshots>
+        <description>Should see success message: &lt;span class=&apos;step-parameter&apos;&gt;Successfully created a new person&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {name=ABCDEFGHIJKLMNOPQRSTUVWXYZABCD, age=999999999}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the form page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="866">
+        <screenshots>
+          <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+          <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+        </screenshots>
+        <description>On the form page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user enters the name &apos;{ABCDEFGHIJKLMNOPQRSTUVWXYZABCD}&apos; and age &apos;{999999999}&apos; and submits the form" result="SUCCESS">
+      <screenshots>
+        <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="5633">
+        <screenshots>
+          <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+          <screenshot image="7055024dead29d8fea39113865980eb7_NONE.png"/>
+        </screenshots>
+        <description>Enters name: &lt;span class=&apos;step-parameter&apos;&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZABCD&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="1110">
+        <screenshots>
+          <screenshot image="7055024dead29d8fea39113865980eb7_NONE.png"/>
+          <screenshot image="8390faff786ca8436fdf60ca63479430_NONE.png"/>
+        </screenshots>
+        <description>Enters age: &lt;span class=&apos;step-parameter&apos;&gt;999999999&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="906">
+        <screenshots>
+          <screenshot image="8390faff786ca8436fdf60ca63479430_NONE.png"/>
+          <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+        </screenshots>
+        <description>Posts form</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then they should see the success message &apos;Successfully created a new person&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="907">
+        <screenshots>
+          <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+        </screenshots>
+        <description>Should see success message: &lt;span class=&apos;step-parameter&apos;&gt;Successfully created a new person&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {name=ÓÜÖÚŐŰÁÉÍ óüöúőűáéí, age=100}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the form page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="899">
+        <screenshots>
+          <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+        </screenshots>
+        <description>On the form page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user enters the name &apos;{ÓÜÖÚŐŰÁÉÍ óüöúőűáéí}&apos; and age &apos;{100}&apos; and submits the form" result="SUCCESS">
+      <screenshots>
+        <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2360">
+        <screenshots>
+          <screenshot image="4d5691124da85aa7493e4e788d4180c5_NONE.png"/>
+          <screenshot image="001640ddec2c2145c35f44a34e0d1487_NONE.png"/>
+        </screenshots>
+        <description>Enters name: &lt;span class=&apos;step-parameter&apos;&gt;ÓÜÖÚŐŰÁÉÍ óüöúőűáéí&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="1016">
+        <screenshots>
+          <screenshot image="001640ddec2c2145c35f44a34e0d1487_NONE.png"/>
+          <screenshot image="c3274fe10817e419831c0173f311eb22_NONE.png"/>
+        </screenshots>
+        <description>Enters age: &lt;span class=&apos;step-parameter&apos;&gt;100&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="928">
+        <screenshots>
+          <screenshot image="c3274fe10817e419831c0173f311eb22_NONE.png"/>
+          <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+        </screenshots>
+        <description>Posts form</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then they should see the success message &apos;Successfully created a new person&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="875">
+        <screenshots>
+          <screenshot image="748f965201deb7c863de3cad526076d5_NONE.png"/>
+        </screenshots>
+        <description>Should see success message: &lt;span class=&apos;step-parameter&apos;&gt;Successfully created a new person&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

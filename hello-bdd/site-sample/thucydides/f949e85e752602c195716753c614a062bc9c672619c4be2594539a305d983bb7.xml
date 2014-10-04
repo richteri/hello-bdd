@@ -1,0 +1,216 @@
+<acceptance-test-run title="*Trying to post too short name*" name="*Trying to post too short name*" steps="18" successful="18" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="20994" timestamp="2014-10-03T15:30:28.694+02:00">
+  <user-story id="BDD-2" name="Bdd-2" path="BDD-2"/>
+  <issues>
+    <issue>BDD-2</issue>
+  </issues>
+  <tags>
+    <tag name="BDD-1/CRUD Operations for Person entities" type="Epic"/>
+    <tag name="BDD-2/Create Person" type="Story"/>
+    <tag name="Create Person" type="Story"/>
+    <tag name="Bdd-2" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>name</header>
+      <header>age</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>A</value>
+        <value>0</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Z</value>
+        <value>17</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Abcd Efgh Ijkl Mnop Qrst Óüöúő Űáéí</value>
+        <value>-8</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {name=A, age=0}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="7f4ece525012455d2dd505c74c8df236_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the form page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="7f4ece525012455d2dd505c74c8df236_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="907">
+        <screenshots>
+          <screenshot image="7f4ece525012455d2dd505c74c8df236_NONE.png"/>
+          <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+        </screenshots>
+        <description>On the form page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user enters the name &apos;{A}&apos; and age &apos;{0}&apos; and submits the form" result="SUCCESS">
+      <screenshots>
+        <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1068">
+        <screenshots>
+          <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+          <screenshot image="bd6fc0004c49eff4485a77da2b98f085_NONE.png"/>
+        </screenshots>
+        <description>Enters name: &lt;span class=&apos;step-parameter&apos;&gt;A&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="953">
+        <screenshots>
+          <screenshot image="bd6fc0004c49eff4485a77da2b98f085_NONE.png"/>
+          <screenshot image="d45915b1c121e40d20ecc667c339cb63_NONE.png"/>
+        </screenshots>
+        <description>Enters age: &lt;span class=&apos;step-parameter&apos;&gt;0&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="766">
+        <screenshots>
+          <screenshot image="d45915b1c121e40d20ecc667c339cb63_NONE.png"/>
+          <screenshot image="3c0c930241e8bc63f1b40dd8fc4b60cf_NONE.png"/>
+        </screenshots>
+        <description>Posts form</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then they should see the error message &apos;size must be between 2 and 30&apos; for name and &apos;must be greater than or equal to 18&apos; for age" result="SUCCESS">
+      <screenshots>
+        <screenshot image="3c0c930241e8bc63f1b40dd8fc4b60cf_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="875">
+        <screenshots>
+          <screenshot image="3c0c930241e8bc63f1b40dd8fc4b60cf_NONE.png"/>
+        </screenshots>
+        <description>Should see name error: &lt;span class=&apos;step-parameter&apos;&gt;size must be between 2 and 30&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="844">
+        <screenshots>
+          <screenshot image="3c0c930241e8bc63f1b40dd8fc4b60cf_NONE.png"/>
+        </screenshots>
+        <description>Should see age error: &lt;span class=&apos;step-parameter&apos;&gt;must be greater than or equal to 18&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {name=Z, age=17}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3c0c930241e8bc63f1b40dd8fc4b60cf_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the form page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="3c0c930241e8bc63f1b40dd8fc4b60cf_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="849">
+        <screenshots>
+          <screenshot image="3c0c930241e8bc63f1b40dd8fc4b60cf_NONE.png"/>
+          <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+        </screenshots>
+        <description>On the form page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user enters the name &apos;{Z}&apos; and age &apos;{17}&apos; and submits the form" result="SUCCESS">
+      <screenshots>
+        <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+        <screenshot image="cb12739bbc7537aaa3c8dfd70432157a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1080">
+        <screenshots>
+          <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+          <screenshot image="b6c4846574096a424d13e3f3b190b666_NONE.png"/>
+        </screenshots>
+        <description>Enters name: &lt;span class=&apos;step-parameter&apos;&gt;Z&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="1002">
+        <screenshots>
+          <screenshot image="b6c4846574096a424d13e3f3b190b666_NONE.png"/>
+          <screenshot image="032c6848e245da65097372a5b92046f9_NONE.png"/>
+        </screenshots>
+        <description>Enters age: &lt;span class=&apos;step-parameter&apos;&gt;17&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="830">
+        <screenshots>
+          <screenshot image="032c6848e245da65097372a5b92046f9_NONE.png"/>
+          <screenshot image="57885490333927b6a61edff970b6bd09_NONE.png"/>
+        </screenshots>
+        <description>Posts form</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then they should see the error message &apos;size must be between 2 and 30&apos; for name and &apos;must be greater than or equal to 18&apos; for age" result="SUCCESS">
+      <screenshots>
+        <screenshot image="cb12739bbc7537aaa3c8dfd70432157a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="953">
+        <screenshots>
+          <screenshot image="cb12739bbc7537aaa3c8dfd70432157a_NONE.png"/>
+        </screenshots>
+        <description>Should see name error: &lt;span class=&apos;step-parameter&apos;&gt;size must be between 2 and 30&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="849">
+        <screenshots>
+          <screenshot image="cb12739bbc7537aaa3c8dfd70432157a_NONE.png"/>
+        </screenshots>
+        <description>Should see age error: &lt;span class=&apos;step-parameter&apos;&gt;must be greater than or equal to 18&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {name=Abcd Efgh Ijkl Mnop Qrst Óüöúő Űáéí, age=-8}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="cb12739bbc7537aaa3c8dfd70432157a_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the form page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="cb12739bbc7537aaa3c8dfd70432157a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="894">
+        <screenshots>
+          <screenshot image="cb12739bbc7537aaa3c8dfd70432157a_NONE.png"/>
+          <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+        </screenshots>
+        <description>On the form page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user enters the name &apos;{Abcd Efgh Ijkl Mnop Qrst Óüöúő Űáéí}&apos; and age &apos;{-8}&apos; and submits the form" result="SUCCESS">
+      <screenshots>
+        <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2440">
+        <screenshots>
+          <screenshot image="6178532b192de09d1b87526a7f21a0a0_NONE.png"/>
+          <screenshot image="629c342196f3554c83bb825ebf1a0e90_NONE.png"/>
+        </screenshots>
+        <description>Enters name: &lt;span class=&apos;step-parameter&apos;&gt;Abcd Efgh Ijkl Mnop Qrst Óüöúő Űáéí&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="957">
+        <screenshots>
+          <screenshot image="629c342196f3554c83bb825ebf1a0e90_NONE.png"/>
+          <screenshot image="29dee6e1a52e575444721d70a4f418f6_NONE.png"/>
+        </screenshots>
+        <description>Enters age: &lt;span class=&apos;step-parameter&apos;&gt;-8&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="766">
+        <screenshots>
+          <screenshot image="29dee6e1a52e575444721d70a4f418f6_NONE.png"/>
+          <screenshot image="222c0648f62c4269606823d20b09f636_NONE.png"/>
+        </screenshots>
+        <description>Posts form</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then they should see the error message &apos;size must be between 2 and 30&apos; for name and &apos;must be greater than or equal to 18&apos; for age" result="SUCCESS">
+      <screenshots>
+        <screenshot image="222c0648f62c4269606823d20b09f636_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="890">
+        <screenshots>
+          <screenshot image="222c0648f62c4269606823d20b09f636_NONE.png"/>
+        </screenshots>
+        <description>Should see name error: &lt;span class=&apos;step-parameter&apos;&gt;size must be between 2 and 30&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="860">
+        <screenshots>
+          <screenshot image="222c0648f62c4269606823d20b09f636_NONE.png"/>
+        </screenshots>
+        <description>Should see age error: &lt;span class=&apos;step-parameter&apos;&gt;must be greater than or equal to 18&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>
