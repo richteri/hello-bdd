@@ -11,9 +11,18 @@ import net.thucydides.plugins.jira.service.SystemPropertiesJIRAConfiguration;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
+/**
+ * Extends default JIRA config class
+ * to process custom field that sores acceptance criteria scenarios
+ * @author richteri
+ *
+ */
 public class CustomJIRAConfiguration extends SystemPropertiesJIRAConfiguration {
     
-    public static final String JIRA_STORY_FIELD = "jira.story.field";
+    /**
+     * Property key for acceptance criteria custom field name
+     */
+    public static final String JIRA_ACCEPTANCE_FIELD = "jira.acceptance.field";
 
     private final EnvironmentVariables environmentVariables;
     
@@ -25,9 +34,14 @@ public class CustomJIRAConfiguration extends SystemPropertiesJIRAConfiguration {
         customFieldNames = readCustomFieldNames();
     }
     
+    /**
+     * Building list of custom fields to process
+     * jira.custom.field.*; jira.narrative.field; jira.acceptance.field
+     * @return list of custom field names
+     */
     private List<String> readCustomFieldNames() {
         Set<String> customFieldNames = Sets.newHashSet(
-                getStoryFieldName(),
+                getAcceptanceFieldName(),
                 environmentVariables.getProperty(JIRARequirementsConfiguration.JIRA_CUSTOM_NARRATIVE_FIELD.getName()));
         
         int customFieldIndex = 1;
@@ -43,7 +57,11 @@ public class CustomJIRAConfiguration extends SystemPropertiesJIRAConfiguration {
         return customFieldNames;
     }
     
-    public String getStoryFieldName() {
-        return environmentVariables.getProperty(JIRA_STORY_FIELD);
+    /**
+     * Get the configured acceptance criteria custom field name
+     * @return
+     */
+    public String getAcceptanceFieldName() {
+        return environmentVariables.getProperty(JIRA_ACCEPTANCE_FIELD);
     }
 }

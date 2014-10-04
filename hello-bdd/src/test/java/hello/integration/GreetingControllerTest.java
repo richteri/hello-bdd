@@ -27,7 +27,8 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author István
+ * Spring boot specific integration test samples
+ * @author richteri
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)

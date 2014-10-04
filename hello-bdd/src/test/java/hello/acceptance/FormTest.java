@@ -12,6 +12,9 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class FormTest {
 
+    /**
+     * Setting display language
+     */
     @Before
     public void setupProfile() {
         FirefoxProfile profile = new FirefoxProfile();

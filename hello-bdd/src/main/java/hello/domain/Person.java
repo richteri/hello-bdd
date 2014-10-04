@@ -4,6 +4,11 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+/**
+ * Sample domain class
+ * @author richteri
+ *
+ */
 public class Person {
 
     @Size(min=2, max=30)

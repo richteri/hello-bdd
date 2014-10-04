@@ -6,6 +6,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.filter.CharacterEncodingFilter;
 
+/**
+ * Minimal spring-boot web application
+ * @author richteri
+ *
+ */
 @ComponentScan
 @EnableAutoConfiguration
 public class Application {

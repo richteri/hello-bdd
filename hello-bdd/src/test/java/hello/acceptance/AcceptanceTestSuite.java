@@ -38,7 +38,7 @@ public class AcceptanceTestSuite extends ThucydidesJUnitStories {
      */
     @Override
     public Configuration configuration() {
-        return super.configuration().useStoryLoader(new JiraStoryLoader(jira));
+        return super.configuration().useStoryLoader(new JiraStoryLoader(config, jira));
     }
 
     /**
@@ -51,7 +51,7 @@ public class AcceptanceTestSuite extends ThucydidesJUnitStories {
         List<IssueSummary> issues;
         try {
             // find all issues where story is provided
-            issues = jira.findByJQL("\"" + config.getStoryFieldName() + "\" is not empty");
+            issues = jira.findByJQL("\"" + config.getAcceptanceFieldName() + "\" is not empty");
             for (IssueSummary issue : issues) {
                 storyPaths.add(issue.getKey());
             }
